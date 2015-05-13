@@ -1,0 +1,53 @@
+.editbutton {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #666;
+	color: #fff;
+	padding: 0 2px;
+}
+.editbutton a, .editbutton a:hover {
+	color: #fff;
+}
+.editbox {
+	background-color: #fff0e6;
+	position: fixed;
+	top: 100px;
+	left: 100px;
+	padding: 5px;
+	min-height: 100px;
+	min-width: 200px;
+}
+.saveedit {
+	margin: 0 0 0 5px;
+	padding: 2px;
+	background-color: #666;
+	color: #fff;
+	position:absolute;
+	left: 0;
+}
+a.saveedit, a.saveedit:hover {
+	color: #fff;
+}
+.canceledit {
+	margin: 0 5px 0 0;
+	padding: 2px;
+	background-color: #666;
+	color: #fff;
+	position:absolute;
+	right: 0;
+}
+a.canceledit, a.canceledit:hover {
+	color: #fff;
+}
+.centereddiv {
+	width: 50%;
+	height: 50%;
+	margin: auto auto;
+}
+[contenteditable="true"]:hover {
+	outline: 2px dashed #0090D2;
+}
+[contenteditable="true"]:hover {
+	background-color: #f3f095;
+}
