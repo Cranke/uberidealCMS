@@ -1,22 +1,59 @@
-html, * {
-	padding: 0;
-	margin: 0;
+/* Reset */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
 }
-
 body {
-    color: #333;
-	font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    min-width: 320px;
-    background-color: #eee;
+    color: #222;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+    background: #fff none repeat scroll 0 0;
+}
+*, *::before, *::after {
+    border: 0 none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+figure {
+    margin: 0;
+}
+p {
+    font-size: 14px;
+    font-weight: 300;
 }
 a {
-	text-decoration: none;
-	color: #333;
+    color: #444;
+    outline: medium none;
+    text-decoration: none;
+    transition: color 0.3s ease 0s, background 0.3s ease 0s, border 0.3s ease 0s;
 }
 a:hover {
-	text-decoration: underline;
-	color: #333;
+    color: #333;
+}
+.cf::before, .cf::after {
+    content: "";
+    display: table;
+}
+.cf::after {
+    clear: both;
+}
+.table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    display: table;
+}
+.table-row {
+    display: table-row;
+}
+.table-cell {
+    display: table-cell;
 }
 .userstatus {
 	position: fixed;
@@ -71,7 +108,7 @@ a:hover {
 	min-width: 10em;
 }
 .descriptorvalue {
-	width: 10em; 
+	width: 10em;
 	position: relative;
 }
 .floatleft {
@@ -116,63 +153,7 @@ a:hover {
    color:    #999;
 }
 
-/* Reset */
-html {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-}
-body {
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #222;
-    letter-spacing: 0.025em;
-    line-height: 1.5em;
-    background: #fff none repeat scroll 0 0;
-}
-*, *::before, *::after {
-    border: 0 none;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-    display: block;
-}
-figure {
-    margin: 0;
-}
-p {
-    font-size: 14px;
-    font-weight: 300;
-}
-a {
-    color: #fff;
-    outline: medium none;
-    text-decoration: none;
-    transition: color 0.3s ease 0s, background 0.3s ease 0s, border 0.3s ease 0s;
-}
-a:hover {
-    color: white;
-}
-.cf::before, .cf::after {
-    content: "";
-    display: table;
-}
-.cf::after {
-    clear: both;
-}
-.table {
-    border-collapse: separate;
-    border-spacing: 10px;
-    display: table;
-}
-.table-row {
-    display: table-row;
-}
-.table-cell {
-    display: table-cell;
-}
+
 
 /* OVERWRITE */
 .notrans {
@@ -535,4 +516,3 @@ a.standardtextdark:hover {
     display: none;
   }
 }
-
