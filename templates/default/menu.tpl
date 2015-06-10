@@ -11,7 +11,7 @@
 
       {if $p.hasVisibleChildren eq '1'}
       <ul>
-        {foreach $p.visibleChildren as $p): ?>
+        {foreach $p.visibleChildren as $p}
         <li>
           <a href="{$p.url}">{$p.title}</a>
         </li>
