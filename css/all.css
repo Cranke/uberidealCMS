@@ -116,4 +116,423 @@ a:hover {
    color:    #999;
 }
 
+/* Reset */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #222;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+    background: #fff none repeat scroll 0 0;
+}
+*, *::before, *::after {
+    border: 0 none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+figure {
+    margin: 0;
+}
+p {
+    font-size: 14px;
+    font-weight: 300;
+}
+a {
+    color: #fff;
+    outline: medium none;
+    text-decoration: none;
+    transition: color 0.3s ease 0s, background 0.3s ease 0s, border 0.3s ease 0s;
+}
+a:hover {
+    color: white;
+}
+.cf::before, .cf::after {
+    content: "";
+    display: table;
+}
+.cf::after {
+    clear: both;
+}
+.table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    display: table;
+}
+.table-row {
+    display: table-row;
+}
+.table-cell {
+    display: table-cell;
+}
+
+/* OVERWRITE */
+.notrans {
+  transition: none;
+}
+.nomargin {
+  margin: 0;
+}
+.nopadding {
+  padding: 0;
+}
+.norightmargin {
+  margin-right: 0;
+}
+.norightpadding {
+  padding-right: 0;
+}
+
+.standardtext, a.standardtext {
+  color: #eee;
+  font-size: 14px;
+  font-weight: 300;
+}
+a.standardtext:hover {
+  color: #fff;
+}
+.standardtextdark, a.standardtextdark {
+  color: #444;
+}
+a.standardtextdark:hover {
+  color: #333;
+}
+.standardpadding {
+  padding-left: 2.6em;
+}
+.whitecolor, a.whitecolor {
+  color: #fff;
+}
+.blackcolor, a.blackcolor {
+  color: #333;
+}
+.underline {
+  text-decoration: underline;
+}
+.bold {
+  font-weight: bold;
+}
+.w50p {
+  width: 50%;
+  float: left;
+}
+.p30 {
+  padding: 30px;
+}
+
+/* MOBILEMENU */
+@media all and (min-width: 79.99em) {
+    .egmenu, .menu-icon {
+    	display: none;
+    }
+    .navigation {
+    	display: block;
+    }
+}
+
+@media only screen and (max-width: 79.99em) {
+    .header-fix {
+        position: relative;
+        padding: 3em 0 0 0;
+    }
+    .header-menu {
+        padding: 0;
+        margin-left: -10px;
+    }
+  ul.egmenu {
+      height: auto;
+      max-height: 100%;
+      overflow-y: scroll;
+      display: none; }
+  ul.egmenu > li {  float: none; width: 100%; }
+  ul.egmenu a { line-height: 2em; }
+  ul.egmenu ul { position: relative; }
+    .egmenu, .menu-icon {
+        display: none;
+    }
+
+  ul.egmenu li.tap { background-color: #333;  }
+  ul.egmenu li.tap ul {
+    max-height: 1000px;
+    background-color: #666;
+    padding: 0.3em 0 0.6em 0;
+  }
+  .header-logo {
+    float: right;
+  }
+}
+/* Ende MOBILEMENU */
+
+/*************************/
+/* RESPONSIVE GRID SIZES */
+/*************************/
+
+/* LARGE */
+@media only screen and (min-width: 80em) {
+  .large-1 {
+    width: 8.333%;
+  }
+  .large-2 {
+    width: 16.666%;
+  }
+  .large-3 {
+    width: 25%;
+  }
+  .large-4 {
+    width: 33.333%;
+  }
+  .large-5 {
+    width: 41.666%;
+  }
+  .large-6 {
+    width: 50%;
+  }
+  .large-7 {
+    width: 58.333%;
+  }
+  .large-8 {
+    width: 66.666%;
+  }
+  .large-9 {
+    width: 75%;
+  }
+  .large-10 {
+    width: 83.333%;
+  }
+  .large-11 {
+    width: 91.666%;
+  }
+  .large-12 {
+    width: 100%;
+  }
+
+  .column-large-top {
+      margin-top: 10px;
+  }
+  .column-large-bottom {
+      margin-bottom: 10px;
+  }
+  .column-large-left {
+      padding-left: 10px;
+  }
+  .column-large-right {
+      padding-right: 10px;
+  }
+
+  .hide-large {
+    display: none;
+  }
+  .show-large {
+    display: none;
+  }
+  .showonclick-large {
+    cursor: pointer;
+  }
+  .showonclick-large ul {
+    display: none;
+  }
+}
+
+/* BIG */
+@media only screen and (min-width: 60em) and (max-width: 79.99em) {
+  .big-1 {
+    width: 8.333%;
+  }
+  .big-2 {
+    width: 16.666%;
+  }
+  .big-3 {
+    width: 25%;
+  }
+  .big-4 {
+    width: 33.333%;
+  }
+  .big-5 {
+    width: 41.666%;
+  }
+  .big-6 {
+    width: 50%;
+  }
+  .big-7 {
+    width: 58.333%;
+  }
+  .big-8 {
+    width: 66.666%;
+  }
+  .big-9 {
+    width: 75%;
+  }
+  .big-10 {
+    width: 83.333%;
+  }
+  .big-11 {
+    width: 91.666%;
+  }
+  .big-12 {
+    width: 100%;
+  }
+
+  .column-big-top {
+      margin-top: 10px;
+  }
+  .column-big-bottom {
+      margin-bottom: 10px;
+  }
+  .column-big-left {
+      padding-left: 10px;
+  }
+  .column-big-right {
+      padding-right: 10px;
+  }
+
+  .hide-big {
+    display: none;
+  }
+  .show-big {
+    display: none;
+  }
+  .showonclick-big {
+    cursor: pointer;
+  }
+  .showonclick-big ul {
+    display: none;
+  }
+}
+/* MEDIUM */
+@media only screen and (min-width: 40em) and (max-width: 59.999em) {
+  .medium-1 {
+    width: 8.333%;
+  }
+  .medium-2 {
+    width: 16.666%;
+  }
+  .medium-3 {
+    width: 25%;
+  }
+  .medium-4 {
+    width: 33.333%;
+  }
+  .medium-5 {
+    width: 41.666%;
+  }
+  .medium-6 {
+    width: 50%;
+  }
+  .medium-7 {
+    width: 58.333%;
+  }
+  .medium-8 {
+    width: 66.666%;
+  }
+  .medium-9 {
+    width: 75%;
+  }
+  .medium-10 {
+    width: 83.333%;
+  }
+  .medium-11 {
+    width: 91.666%;
+  }
+  .medium-12 {
+    width: 100%;
+  }
+
+  .column-medium-top {
+      margin-top: 10px;
+  }
+  .column-medium-bottom {
+      margin-bottom: 10px;
+  }
+  .column-medium-left {
+      padding-left: 10px;
+  }
+  .column-medium-right {
+      padding-right: 10px;
+  }
+
+  .hide-medium {
+    display: none;
+  }
+  .show-medium {
+    display: none;
+  }
+  .showonclick-medium {
+    cursor: pointer;
+  }
+  .showonclick-medium ul {
+    display: none;
+  }
+}
+@media only screen and (max-width:39.999em) {
+  .small-1 {
+    width: 8.333%;
+  }
+  .small-2 {
+    width: 16.666%;
+  }
+  .small-3 {
+    width: 25%;
+  }
+  .small-4 {
+    width: 33.333%;
+  }
+  .small-5 {
+    width: 41.666%;
+  }
+  .small-6 {
+    width: 50%;
+  }
+  .small-7 {
+    width: 58.333%;
+  }
+  .small-8 {
+    width: 66.666%;
+  }
+  .small-9 {
+    width: 75%;
+  }
+  .small-10 {
+    width: 83.333%;
+  }
+  .small-11 {
+    width: 91.666%;
+  }
+  .small-12 {
+    width: 100%;
+  }
+
+  .column-small-top {
+      margin-top: 10px;
+  }
+  .column-small-bottom {
+      margin-bottom: 10px;
+  }
+  .column-small-left {
+      padding-left: 10px;
+  }
+  .column-small-right {
+      padding-right: 10px;
+  }
+
+  .hide-small {
+    display: none;
+  }
+  .show-small {
+    display: none;
+  }
+  .showonclick-small {
+    cursor: pointer;
+  }
+  .showonclick-small ul {
+    display: none;
+  }
+}
 
