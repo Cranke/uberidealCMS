@@ -1,5 +1,60 @@
 $(function() {
 	// getareas();
+	
+	$('.has-sub').click( function(e) {
+		e.preventDefault();
+		var hastap = 0;
+		if($(this).parent().hasClass('tap')) { hastap = 1; };
+		$(".tap").removeClass("tap");
+		if(hastap == 1) {
+			$(this).parent().removeClass('tap');
+		} else {
+			$(this).parent().addClass('tap');
+		}
+	});
+
+	$(".menu-icon").click(function() {
+		$(this).toggleClass("open");
+    $("body").toggleClass("nooverflow");
+		$(".egmenu").slideToggle();
+	});
+
+	$(".showonclick h5").click(function(e) {
+    e.preventDefault();
+    if($(document).width()<1025) {
+      if($(this).parent().find("ul").css("display") == "none") {
+        $(".submenuopen").find("ul").slideUp(1000);
+        $(".submenuopen").removeClass("submenuopen");
+        $(this).parent().addClass("submenuopen");
+        $(this).parent().find("ul").slideDown(1000);
+      } else {
+        $(".showonclick").find("ul").slideUp(1000);
+        $(this).parent().removeClass("submenuopen");
+      }
+
+    } else {
+      $(".showonclick").each(function() {
+        $(this).parent().find("ul").addClass("submenuopen");
+        $(this).parent().find("ul").slideDown(1000);
+      });
+    }
+
+	});
+
+	$(".anchor").click(function(e) {
+    e.preventDefault();
+    anchor = $(this).attr('href');
+    $("html, body").animate({
+      'scrollTop':   $(anchor).offset().top - 100
+    }, 1000);
+  });
+
+  $(".rolldown").click( function(e) {
+    e.preventDefault();
+    $(".roller").slideToggle();
+  });
+
+	
 });
 
 function getareas() {
