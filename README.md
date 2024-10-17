@@ -1,1 +1,2 @@
 # uberidealCMS
+# development ceased
